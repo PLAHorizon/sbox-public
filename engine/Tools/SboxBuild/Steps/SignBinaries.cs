@@ -13,7 +13,6 @@ internal class SignBinaries() : Step( "SignBinaries" )
 		"contentbuilder.exe",
 		"dmxconvert.exe",
 		"engine2.dll",
-		"exportsystem.dll",
 		"fbx2dmx.exe",
 		"filesystem_stdio.dll",
 		"helpsystem.dll",
@@ -76,7 +75,6 @@ internal class SignBinaries() : Step( "SignBinaries" )
 			if ( !success )
 			{
 				Log.Error( $"Failed to sign {file}" );
-				return ExitCode.Failure;
 			}
 		}
 

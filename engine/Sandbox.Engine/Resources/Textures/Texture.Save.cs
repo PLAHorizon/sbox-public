@@ -13,7 +13,7 @@ public partial class Texture
 	/// so the saved texture can be sampled normally.
 	/// </remarks>
 	/// <param name="formatOverride">Optional format override. If null, the format is automatically determined based on texture properties.</param>
-	public byte[] SaveToVtex( ImageFormat? formatOverride )
+	public byte[] SaveToVtex( ImageFormat? formatOverride = null )
 	{
 		var desc = Desc;
 
